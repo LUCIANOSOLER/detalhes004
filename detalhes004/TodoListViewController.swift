@@ -32,7 +32,7 @@ class TodoListViewController: UITableViewController {
     
     //MARK - Tableview Delegate Methods - quando clicar na celula
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(itemArray[indexPath.row])//quando clicar ele imprime o numero da celula selecionada
+        print(itemArray[indexPath.row])//quando clicar ele imprime o numero da celula selecionada novo
         
         if tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark {
             tableView.cellForRow(at: indexPath)?.accessoryType = .none
