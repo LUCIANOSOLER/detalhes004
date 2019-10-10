@@ -43,6 +43,44 @@ class TodoListViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         
     }
+    
+    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+        
+        var textField = UITextField()
+        
+        //criando um popup quando clica no botao
+        let alert = UIAlertController(title: "Titulo alerta", message: "Mensagem do alerta pode ser de qualquer tamanho", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "adicionar", style: .default) { (action) in
+            //o que vai acontecer quando o usuario clicar na ação do alerta
+            print("ADICIONADO")
+            print(textField.text!)
+        }
+        alert.addAction(action)
+        
+
+        let cancelar = UIAlertAction(title: "cancelar", style: .default) { (action) in
+            //o que vai acontecer quando o usuario clicar na ação do alerta
+            print("cancelado")
+            alert.dismiss(animated: true, completion: nil)
+        }
+        alert.addAction(cancelar)
+        
+        
+        //colocar texto dentro do alert
+        alert.addTextField { (texto) in
+            texto.placeholder = "criar novo item" //tipo o hit text do android
+            print(texto.text!)
+            textField = texto
+        }
+        
+        //mostrar o alerta
+        present(alert, animated: true, completion: nil)
+        
+        
+        
+    }
+    
 
 }
 
