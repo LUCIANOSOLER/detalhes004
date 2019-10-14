@@ -222,7 +222,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="IAPAR CLIMA" leftItemsSupplementBackButton="YES" id="71t-ex-R53">
                         <barButtonItem key="backBarButtonItem" title="voltar" id="lUx-6X-ACy"/>
-                        <barButtonItem key="leftBarButtonItem" title="Menu" image="list.number.rtl" catalog="system" landscapeImage="list.number.rtl" largeContentSizeImage="list.number.rtl" style="plain" id="9rv-07-zgB">
+                        <barButtonItem key="rightBarButtonItem" title="Menu" image="list.number.rtl" catalog="system" landscapeImage="list.number.rtl" largeContentSizeImage="list.number.rtl" style="plain" id="9rv-07-zgB">
                             <connections>
                                 <segue destination="doi-X1-9im" kind="show" id="4Oa-3o-mty"/>
                             </connections>
